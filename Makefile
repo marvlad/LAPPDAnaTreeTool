@@ -9,7 +9,7 @@ SOURCES = MultiAnalysis.cpp Macro.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
-EXECUTABLE = MultiAnalysis
+EXECUTABLE = main
 
 all: $(EXECUTABLE)
 
