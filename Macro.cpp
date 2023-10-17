@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const std::string mainpath = "/pnfs/annie/persistent/users/mascenci/LAPPD39_output/new_branch/";
+const std::string mainpath = "/Users/marvinascenciososa/Desktop/pnfs_mrvn/ANNIE/Lab_6/LAPPD39/LAPPD39_output/new_branch/";
 const std::string rootfile = "/Analysis.root";
 
 std::string get_path(std::string conf){
@@ -67,7 +67,7 @@ void GetHistogram2D(std::vector<TH2D*> &all_vects, std::vector<std::string> name
  TH2D *h;
  MultiAnalysis *LAPPD;
  std::string fullname;
- TFile fout("/annie/app/users/mascenci/MrvnTools/MyMacro/RMD_channels.root","RECREATE");
+ TFile fout("./RMS_channels.root","RECREATE");
  //fout.cd();
  for(int i=0; i < names.size();i++){
     fullname = get_path(names[i]);
