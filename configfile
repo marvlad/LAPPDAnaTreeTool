@@ -1,0 +1,23 @@
+# path inputs
+mainpath=/Users/marvinascenciososa/Desktop/pnfs_mrvn/ANNIE/Lab_6/LAPPD39/LAPPD39_output/new_branch/
+rootfile=/Analysis.root
+#namefile=No_TriggBoard,ACDCsTriggCable,TrigCableNOGround,TrigCableNOGround_Connected_to_Spare_PickUpSMA,No_white_trigg_grounds,One_red_ground_other_grounds_isolated,No_TriggBoard_after_rg
+namefile=No_TriggBoard
+
+# path output
+outputpath=/Users/marvinascenciososa/Desktop/pnfs_mrvn/ANNIE/Lab_6/LAPPD39/LAPPD39_output/plot_test/
+
+# TH1D histogram settings
+th1dbins=100
+th1dstartbin=0.
+th1dendbin=10.
+
+# TH2D histogram settings
+th2dbinsX=100
+th2dstartbinX=0.
+th2dendbinX=20.
+th2dbinsY=60
+th2dstartbinY=0.
+th2dendbinY=60.
+
+# Other configurations

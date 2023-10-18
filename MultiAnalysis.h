@@ -16,6 +16,10 @@
 #include <vector>
 #include <TColor.h>
 #include <TRandom.h>
+#include <fstream>
+#include <string>
+#include <map>
+#include <sstream>
 
 class MultiAnalysis {
 private: 
