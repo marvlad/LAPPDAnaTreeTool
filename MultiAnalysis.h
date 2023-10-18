@@ -14,6 +14,8 @@
 #include <TCanvas.h>
 #include <TLegend.h>
 #include <vector>
+#include <TColor.h>
+#include <TRandom.h>
 
 class MultiAnalysis {
 private: 

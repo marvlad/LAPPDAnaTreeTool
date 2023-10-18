@@ -119,7 +119,7 @@ TH1D* MultiAnalysis::Histogram(const std::string& namehist, int channel){
    std::string hname = namehist;
    int hbins = 100;
    double in_bin = 0.0;
-   double end_bin = 20.0;
+   double end_bin = 10.0;
    TH1D* h = new TH1D(hname.c_str(),hname.c_str(),hbins, in_bin, end_bin);
 
    for (Long64_t jentry=0; jentry<nentries;jentry++) {

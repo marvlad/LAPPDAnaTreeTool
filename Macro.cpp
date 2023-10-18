@@ -1,4 +1,5 @@
 #include "MultiAnalysis.h"
+#include "aux_common.h"
 
 using namespace std;
 
@@ -32,14 +33,8 @@ void plot(std::vector<TH1D*> hists, std::vector<std::string> names){
    hists[i]->SetLineWidth(2);
    hists[i]->GetXaxis()->SetTitle("RMS");
    hists[i]->GetYaxis()->SetTitle("Entries");
+   hists[i]->SetLineColor(randomColor(i));
    //showme_elements(hists[i]);
-   if(i==0) hists[i]->SetLineColor(kRed);
-   if(i==1) hists[i]->SetLineColor(kBlue);;
-   if(i==2) hists[i]->SetLineColor(kBlack);
-   if(i==3) hists[i]->SetLineColor(kGreen+1);
-   if(i==4) hists[i]->SetLineColor(kMagenta);
-   if(i==5) hists[i]->SetLineColor(kTeal);
-
    hists[i]->Draw(i==0 ? "hist" : "hist same");
  }
  legend->Draw("same");
@@ -93,7 +88,7 @@ int main(){
  std::vector<TH1D*> HistVect;
  std::vector<TH2D*> HistVect2D;
  GetHistogram(HistVect, namedir, channel);
- GetHistogram2D(HistVect2D, namedir);
+ //GetHistogram2D(HistVect2D, namedir);
  plot(HistVect, namedir);
  
  return 0;
