@@ -27,13 +27,14 @@ void plot(std::vector<TH1D*> hists, std::vector<std::string> names){
  for(int i=0; i< hists.size(); i++){
    legend->AddEntry(hists[i], names[i].c_str());
    hists[i]->SetStats(0);
-   hists[i]->SetLineWidth(2);
+   hists[i]->SetLineWidth(3);
    hists[i]->GetXaxis()->SetTitle("RMS");
    hists[i]->GetYaxis()->SetTitle("Entries");
    hists[i]->SetLineColor(randomColor(i));
    //showme_elements(hists[i]);
    hists[i]->Draw(i==0 ? "hist" : "hist same");
  }
+
  legend->Draw("same");
 
  cout<<"[+] Done making the plot ... :)" << endl;

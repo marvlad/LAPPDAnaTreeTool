@@ -1,8 +1,8 @@
 # path inputs
 mainpath=/Users/marvinascenciososa/Desktop/pnfs_mrvn/ANNIE/Lab_6/LAPPD39/LAPPD39_output/new_branch/
 rootfile=/Analysis.root
-#namefile=No_TriggBoard,ACDCsTriggCable,TrigCableNOGround,TrigCableNOGround_Connected_to_Spare_PickUpSMA,No_white_trigg_grounds,One_red_ground_other_grounds_isolated,No_TriggBoard_after_rg
-namefile=No_TriggBoard
+namefile=No_TriggBoard,ACDCsTriggCable,TrigCableNOGround,TrigCableNOGround_Connected_to_Spare_PickUpSMA,No_white_trigg_grounds,One_red_ground_other_grounds_isolated,No_TriggBoard_after_rg
+#namefile=No_TriggBoard,No_TriggBoard_after_rg
 
 # path output
 outputpath=/Users/marvinascenciososa/Desktop/pnfs_mrvn/ANNIE/Lab_6/LAPPD39/LAPPD39_output/plot_test/
